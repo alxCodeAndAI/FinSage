@@ -2,6 +2,9 @@ from datetime import datetime, timedelta
 import yfinance as yf
 import pandas as pd
 
+def hello():
+    return "hello"
+
 class Stock:
     def __init__(self, ticker_symbol):
         self.ticker_symbol = ticker_symbol
