@@ -9,6 +9,9 @@ format:
 	black *.py 
 
 lint:
-	pylint  *.py
-		
-all: install lint test format 
+	pylint *.py
+
+run:
+	python main.py
+
+all: install test format run
