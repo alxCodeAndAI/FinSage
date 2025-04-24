@@ -3,7 +3,7 @@ import yfinance as yf
 import pandas as pd
 
 def hello():
-    return "hello"
+    return "hi"
 
 class Stock:
     def __init__(self, ticker_symbol):
