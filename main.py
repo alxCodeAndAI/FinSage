@@ -2,8 +2,10 @@ from datetime import datetime, timedelta
 import yfinance as yf
 import pandas as pd
 
+
 def hello():
     return "hi"
+
 
 class Stock:
     def __init__(self, ticker_symbol):
@@ -19,7 +21,7 @@ class Stock:
 
             data = self.stock.history(start=start, end=end, interval=interval)
             if data.empty:
-                
+
                 return None
             data.reset_index(
                 inplace=True
